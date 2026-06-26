@@ -12,6 +12,8 @@ cask "kline-timer" do
     strategy :github_latest
   end
 
+  depends_on macos: ">= :ventura"
+
   app "KlineTimer.app"
 
   zap trash: "~/Library/Preferences/com.kline.timer.plist"
